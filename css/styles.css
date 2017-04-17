@@ -1,23 +1,406 @@
-/*
-Errno::ENOENT: No such file or directory - scss/styles.scss
+* {
+  box-sizing: border-box; }
 
-Backtrace:
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `read'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - scss/styles.scss"; }
+body {
+  font-family: "Hind"; }
+
+button {
+  display: block; }
+
+img {
+  display: block; }
+
+#app-container {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.nav {
+  position: fixed;
+  display: inline;
+  top: 0;
+  left: 0;
+  font-size: 0;
+  z-index: 1;
+  width: 100%;
+  outline: none; }
+
+.nav > * {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  text-align: center;
+  height: 80px;
+  outline: none; }
+
+.nav button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-right: 1.2px solid darkgray;
+  border-left: none;
+  background-color: #F8F8F8;
+  font-size: 16px;
+  font-weight: 600; }
+
+.logo {
+  position: relative; }
+
+.logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 33%; }
+
+.menu i {
+  font-size: 28px;
+  font-weight: 200; }
+
+.menu {
+  border-right: none; }
+
+.page {
+  position: absolute;
+  left: 0;
+  font-size: 0;
+  top: 80px;
+  background-color: #f8f8f8; }
+
+.nav-button {
+  width: 30%; }
+
+.width-twenty {
+  width: 20%; }
+
+.header {
+  display: inline-block;
+  font-size: 0;
+  width: 100%;
+  border: none;
+  outline: none; }
+
+.header > * {
+  margin: none;
+  font-size: 0;
+  height: 50px;
+  vertical-align: top;
+  border: none;
+  padding: none;
+  background-color: black;
+  display: inline-block; }
+
+.left {
+  width: 80%; }
+
+.right {
+  border-left: 1px solid white;
+  position: relative;
+  width: 20%;
+  display: inline-block; }
+
+.dropdown {
+  display: none; }
+
+.right:hover ~
+.dropdown {
+  top: 125px;
+  right: 0;
+  z-index: 1;
+  width: 20%;
+  display: block;
+  background-color: lightgray;
+  color: black;
+  font-size: medium;
+  position: fixed;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .right:hover ~
+  .dropdown :hover {
+    background-color: black; }
+  .right:hover ~
+  .dropdown > * {
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    display: block;
+    background-color: lightgray; }
+    .right:hover ~
+    .dropdown > * li {
+      text-align: center;
+      padding: 5px 2px;
+      list-style: none;
+      margin: 0; }
+
+.left button {
+  padding-left: 20px;
+  font-weight: 400;
+  background-color: black;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: white;
+  text-align: left; }
+
+.right i {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 40px;
+  width: 100%;
+  color: white;
+  height: 100%; }
+
+.hidden {
+  display: none; }
+
+.image-container {
+  display: block;
+  width: 100%;
+  padding: 10px; }
+
+.image-container img {
+  display: block;
+  font-size: medium;
+  width: 100%;
+  padding: 10px; }
+
+.restaurant-card {
+  position: relative; }
+  .restaurant-card .opaque {
+    display: none; }
+
+.restaurant-card > * {
+  color: white;
+  margin: 0;
+  text-shadow: 1px 1px black; }
+
+.restaurant-card p {
+  top: 10%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  font-weight: bolder; }
+
+.restaurant-card i {
+  text-shadow: 1px black;
+  font-size: 6px;
+  padding: 2px;
+  vertical-align: middle; }
+
+.restaurant-card h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 28px;
+  letter-spacing: 2px; }
+
+.wavy-line img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  width: 15%;
+  top: 55%;
+  color: white; }
+
+.menu-expand {
+  display: none; }
+
+@media screen and (min-width: 992px) {
+  .nav {
+    display: none; }
+
+  .page {
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 0;
+    font-size: 0; }
+
+  .header {
+    font-size: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1; }
+
+  .right {
+    display: none; }
+
+  .left {
+    width: 50%; }
+
+  .hidden {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 15%; }
+
+  .hidden button {
+    width: 100%;
+    display: block;
+    height: 100%;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: black;
+    border: none; }
+
+  .hidden button:hover {
+    background-color: darkgray; }
+
+  .hidden img {
+    display: none; }
+
+  .hidden:hover img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    bottom: 20%;
+    width: 30%; }
+
+  .menu-expand {
+    background-color: #f8f8f8;
+    width: 20%;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-right: 1px solid darkgray;
+    margin-right: 1px; }
+
+  .page {
+    box-shadow: inset 0 0 4px #333;
+    position: absolute;
+    left: 20%; }
+
+  .menu-object {
+    position: relative;
+    height: 16%;
+    border-bottom: 1px solid darkgray; }
+
+  .menu-expand > *:hover {
+    background-color: #f1f1f1; }
+
+  .menu-object > * {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+
+  .menu-object img {
+    top: 27%; }
+
+  .menu-object p {
+    width: 100%;
+    text-align: center;
+    bottom: 5px;
+    margin-bottom: 0; }
+
+  .menu-side {
+    border-bottom: 1px solid darkgray;
+    display: block;
+    height: 24%;
+    position: relative;
+    width: 100%; }
+
+  .menu-side img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    display: block;
+    width: 100%; }
+
+  .icons {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); }
+
+  .icons i {
+    padding: 4px; }
+
+  .menu-side .reservation p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    width: 100%;
+    margin-top: none;
+    text-align: center; }
+
+  .reservation i {
+    padding: 5px; }
+
+  .menu-side .wave {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    top: 55%;
+    width: 30%; }
+
+  .image-container {
+    padding: 15% 3% 5% 3%;
+    display: inline-block;
+    font-size: 0; }
+
+  .restaurant-card {
+    vertical-align: top;
+    width: 50%;
+    display: inline-block;
+    position: relative; }
+
+  .restaurant-card img {
+    font-size: medium;
+    padding: 1px;
+    display: block; }
+
+  .restaurant-card > * {
+    margin: 0; }
+
+  .restaurant-card p {
+    transform: translateX(-50%);
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-weight: bolder;
+    letter-spacing: 1.5px; }
+
+  .restaurant-card i {
+    vertical-align: middle;
+    font-size: 6px;
+    padding: 2px; }
+
+  .restaurant-card h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center; }
+
+  .wavy-line img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    width: 15%;
+    top: 55%;
+    color: white; } }
+
+/*# sourceMappingURL=styles.css.map */

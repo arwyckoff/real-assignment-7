@@ -1,55 +1,58 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Hind:600" rel="stylesheet">
       <link href="./css/styles.css" rel="stylesheet">
-    <title>Momofuko</title>
-  </head>
-  <body>
+      <title>Momofuko</title>
+    </head>
+    <body>
+      <div id = "app-container">
+        <div class="nav container">
+            <div class="peach width-twenty">
+              <button name="button" type="button" ><img src="./images/logo-mobile.png" alt=""></button>
+            </div>
+            <div class="nav-button">
+              <button name="button" type="button" >Restaurants</button>
+            </div>
+            <div class="nav-button">
+              <button name="button" type="button">Ventures</button>
+            </div>
+            <div class="menu width-twenty">
+              <button name="button" type="button" ><i class="fa fa-bars"></i></button>
+            </div>
+        </div>
 
-<div id = "app-container">
-  <div class="nav-bar-container">
-    <div class="peach ends">
-      <button type="button" name="button"><img src="./images/logo-mobile.png" alt=""></button>
-    </div>
-    <div class="restaurant-venture">
-      <button type="button" name="button">Restaurants</button>
-    </div>
-    <div class="restaurant-venture">
-      <button type="button" name="button">Ventures</button>
-    </div>
-    <div class="menu ends">
-      <button type="button" name="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
-    </div>
-  </div>
 
   <div class="menu-expand">
-    <div class="menu-outside">
-        <img src="./images/logo-fullsize.svg" alt="">
+    <div class="menu-side">
+        <img  src="./images/logo-fullsize.svg">
     </div>
-    <div class="menu-item">
-    <img src="./images/navicon-bowl.svg" alt="">
+    <div class="menu-object">
+    <img  src="./images/navicon-bowl.svg">
     <p>our restuarants</p>
     </div>
-    <div class="menu-item">
-    <img src="./images/navicon-our-company.svg" alt="">
+    <div class="menu-object">
+    <img  src="./images/navicon-our-company.svg">
     <p>our company</p>
     </div>
-    <div class="menu-item">
-    <img src="./images/navicon-box.svg" alt="">
+    <div class="menu-object">
+    <img  src="./images/navicon-box.svg">
     <p>other ventures</p>
     </div>
-    <div class="menu-outside">
-      <div class="icon-container">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-tumblr" aria-hidden="true"></i>
+
+
+    <div class="menu-side">
+      <div class="icons">
+        <i  class="fa fa-twitter"></i>
+        <i  class="fa fa-facebook"></i>
+        <i  class="fa fa-instagram"></i>
+        <i  class="fa fa-tumblr"></i>
       </div>
-            <img class = "wave" src="./images/wavy-low-line-black.png" alt="">
+        <img class = "wave" src="./images/wavy-low-line-black.png">
       <div class = "reservation">
         <p><i class="fa fa-clock-o" aria-hidden="true"></i>reservations</p>
       </div>
@@ -58,14 +61,14 @@
 
 
   <div class="page">
-    <div class="header-bar">
+    <div class="header">
       <div class="left">
-       <button type="button" name="button">Our Restuarants</button>
+       <button name="button" type="button">Our Restuarants</button>
       </div>
       <div class="right">
-        <i class="fa fa-angle-down" aria-hidden="true"></i>
+        <i class="fa fa-angle-down"></i>
       </div>
-      <div class="menu-drop-down">
+      <div class="dropdown">
         <ul class = "drop">
       <li>Noodle Bar, NY</li>
       <li>Ssam Bar</li>
@@ -78,78 +81,78 @@
         </ul>
       </div>
       <div class="hidden">
-        <button type="button" name="button">By Concept</button>
-          <img src="./images/wavy-low-line-white.png" alt="">
+        <button name="button" type="button">By Concept</button>
+          <img src="./images/wavy-low-line-white.png">
       </div>
       <div class="hidden">
-        <button type="button" name="button">By Location</button>
+        <button name="button" type="button">By Location</button>
       </div>
     </div>
 
     <div class="image-container">
-
-        <div class="image-box">
+      <!-- noodlebar height issues -->
+        <!-- <div class="restaurant-card">
             <img src="./images/momofuko-01-noodlebarbowl_mini.jpg" alt="">
-                <p> <i class="fa fa-circle" aria-hidden="true"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
+                <p> <i class="fa fa-circle"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
                 <h3> Noodle Bar NY</h3>
-                <div class="wavy">
+                <div class=wavy-line>
                 <img src="./images/wavy-low-line-white.png" alt="">
                     </div>
-        </div>
-        <div class="image-box">
+        </div> -->
+        <div class="restaurant-card">
           <img src="./images/momofuko-02-ssam-bar.jpg" alt="">
-            <p> <i class="fa fa-circle" aria-hidden="true"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
+            <p> <i class="fa fa-circle"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
                 <h3>Ssam Bar</h3>
-                <div class="wavy">
+                <div class=wavy-line>
                 <img src="./images/wavy-low-line-white.png" alt="">
              </div>
 
         </div>
-        <div class="image-box">
+        <div class="restaurant-card">
             <img src="./images/momofuko-03-ko.png" alt="">
-            <p> <i class="fa fa-circle" aria-hidden="true"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
+            <p> <i class="fa fa-circle"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
                 <h3>Ko</h3>
-                <div class="wavy">
+                <div class=wavy-line>
                 <img src="./images/wavy-low-line-white.png" alt="">
                     </div>
         </div>
-        <div class="image-box">
+        <div class="restaurant-card">
             <img src="./images/momofuko-04-ma-peche.jpg" alt="">
-            <p> <i class="fa fa-circle" aria-hidden="true"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
+            <p> <i class="fa fa-circle"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
                 <h3>Ma Peche</h3>
-                <div class="wavy">
+                <div class=wavy-line>
                 <img src="./images/wavy-low-line-white.png" alt="">
                     </div>
         </div>
-        <div class="image-box">
+        <div class="restaurant-card">
           <img src="./images/momofuko-05-nishi.jpg" alt="">
               <h3>Nishi</h3>
-              <div class="wavy">
+              <div class=wavy-line>
               <img src="./images/wavy-low-line-white.png" alt="">
                   </div>
           </div>
-          <div class="image-box">
+          <div class="restaurant-card">
             <img src="./images/momofuko-06-CCDC.jpg" alt="">
                 <h3>CCDC</h3>
-                <div class="wavy">
+                <div class=wavy-line>
                 <img src="./images/wavy-low-line-white.png" alt="">
                     </div>
           </div>
-          <div class="image-box">
+          <div class="restaurant-card">
               <img src="./images/momofuko-07-daisho.png" alt="">
-              <p> <i class="fa fa-circle" aria-hidden="true"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
+              <p> <i class="fa fa-circle"></i>Restaurant<i class="fa fa-circle"></i></p>
                   <h3>Daisho</h3>
-                  <div class="wavy">
+                  <div class=wavy-line>
                   <img src="./images/wavy-low-line-white.png" alt="">
-                      </div>
+            </div>
           </div>
-          <div class="image-box">
+          <div class="restaurant-card">
               <img src="./images/momofuko-08-shoto.png" alt="">
-              <p> <i class="fa fa-circle" aria-hidden="true"></i>Restaurant<i class="fa fa-circle" aria-hidden="true"></i></p>
+              <p> <i class="fa fa-circle"></i>Restaurant<i class="fa fa-circle"></i></p>
                   <h3>Shoto</h3>
-                  <div class="wavy">
+            <div class=wavy-line>
                   <img src="./images/wavy-low-line-white.png" alt="">
-                      </div>
+            </div>
           </div>
       </div>
 
